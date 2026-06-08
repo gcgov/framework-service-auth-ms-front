@@ -17,13 +17,11 @@ class msAuthConfig {
 
 
 	/**
-	 * @return $this
+	 * @return self
 	 */
-	final public static function getInstance(): static {
-		$calledClass = get_called_class();
-
+	final public static function getInstance(): self {
 		if( !isset( self::$instance ) ) {
-			self::$instance = new $calledClass();
+			self::$instance = new self();
 		}
 
 		return self::$instance;
