@@ -19,7 +19,7 @@
 		"gcgov/framework": "dev-main"
 	},
 	"repositories": [
-		{ "type": "path", "url": "c:/inetpub/www/packages/framework", "options": { "symlink": false } }
+		{ "type": "path", "url": "../framework*", "options": { "symlink": true } }
 	],
 	"scripts": {
 		"phpstan": "phpstan analyse --memory-limit=512M",
